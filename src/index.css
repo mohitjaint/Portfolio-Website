@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@import "@fontsource/plus-jakarta-sans"; /* <- fixed import */
+
+/* Custom CSS Variables */
+:root {
+  --color-dark-purple: #11071F;
+  --font-plus-jakarta: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Global body styles */
+body {
+  background-color: var(--color-dark-purple);
+  
+}
