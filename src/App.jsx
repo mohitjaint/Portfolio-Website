@@ -4,6 +4,7 @@ import profilePhoto from './assets/profile.jpg'
 import About from './components/Cards/About'
 import CpCard1 from './components/Cards/CP/CpCard1'
 import CpCard2 from './components/Cards/CP/CpCard2'
+import ProjectCard from './components/Cards/Projects/ProjectCard'
 
 function App() {
 
@@ -16,20 +17,7 @@ function App() {
     <About />
     <CpCard1/>
     <CpCard2/>
-
-
-
-
-
-
-    
-
-
-
-
-    
-
-
+    <ProjectCard/>
    </>
 
   )
