@@ -51,4 +51,5 @@ To run the project locally on your machine:
    npm run dev
    ```
 4. **Visit**
-   Open your browser and go to: http://localhost:5173
+
+- Open your browser and go to: http://localhost:5173
