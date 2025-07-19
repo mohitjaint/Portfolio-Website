@@ -6,7 +6,7 @@ function CpCard1() {
       {/* Card 1 */}
       {/* Card 1 */}
       <div className="relative w-full h-[190px] rounded-xl mt-6 ">
-        <div className="absolute inset-0 z-0 rounded-xl bg-gradient-to-br from-[#2A0845] via-[#3B0D5F] to-[#1F053A]"></div>
+        <div className="absolute inset-0 z-0 rounded-xl  shadow-md shadow-[#693B93]"></div>
         <div className="relative z-10 flex flex-col items-center justify-center h-full pt-4">
                     <div className="w-24 h-24 flex items-center justify-center rounded-full border-4 border-white mb-3 text-white text-2xl font-semibold">
             160+
@@ -18,7 +18,7 @@ function CpCard1() {
 
       {/* Card 2 */}
       <div className="relative w-full h-[190px] rounded-xl mt-6">
-        <div className="absolute inset-0 z-0 rounded-xl bg-gradient-to-br from-[#2A0845] via-[#3B0D5F] to-[#1F053A]"></div>
+        <div className="absolute inset-0 z-0 rounded-xl  shadow-md shadow-[#693B93]"></div>
         <div className="relative z-10 flex flex-col items-center justify-center h-full pt-4">
           <div className="w-24 h-24 flex items-center justify-center rounded-full border-4 border-white mb-3 text-white text-2xl font-semibold">
             25+
@@ -29,7 +29,7 @@ function CpCard1() {
 
       {/* Card 3 */}
       <div className="relative w-full h-[190px] rounded-xl mt-6">
-        <div className="absolute inset-0 z-0 rounded-xl bg-gradient-to-br from-[#2A0845] via-[#3B0D5F] to-[#1F053A]"></div>
+        <div className="absolute inset-0 z-0 rounded-xl  shadow-md shadow-[#693B93]"></div>
         <div className="relative z-10 flex flex-col items-center justify-center h-full pt-4">
           <div className="w-24 h-24 flex items-center justify-center rounded-full border-4 border-white mb-3 text-white text-2xl font-semibold">
             495
