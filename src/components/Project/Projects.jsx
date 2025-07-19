@@ -14,14 +14,6 @@ const projects = [
       "I’ve developed a responsive portfolio website using React and Tailwind CSS. It showcases my projects, skills, and achievements through a clean, modern UI. The site features smooth animations, interactive elements, and a professional design—built to reflect my journey as a developer and make a strong impression online.",
     repositoryLink: "https://github.com/mohitjaint/Portfolio-Website",
   },
-  {
-    id: 2,
-    title: "Amazon Clone",
-    image: `${AmazonClone}`,
-    description:
-      "Amazon Clone is a basic e-commerce website replica built to practice and demonstrate JavaScript skills. This project involves making a pre-designed static HTML/CSS layout interactive by adding functionalities like dynamic content rendering, order tracking, and responsive design using JavaScript.",
-    repositoryLink: "https://github.com/mohitjaint/Amazon-Clone",
-  },
   // Add more projects here...
 ];
 
