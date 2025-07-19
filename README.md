@@ -1,12 +1,54 @@
-# React + Vite
+# 💼 Personal Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Screenshot](./src/assets/Projects/portfolioWebsite.png)
 
-Currently, two official plugins are available:
+🔗 **Live Website**: [View Portfolio on GitHub Pages](https://mohitjaint.github.io/Portfolio-Website)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📌 Overview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This is a fully responsive and animated **portfolio website** that showcases my skills and interests **Web Development**.
+I built this website using **React** + **Tailwindcss**.
+The website features smooth section scrolling, glowing UI effects, and modular React components.
+
+---
+
+## 🛠 Built With
+
+- ⚛️ [React](https://reactjs.org/)
+- ⚡ [Vite](https://vitejs.dev/)
+- 🎨 [Tailwind CSS](https://tailwindcss.com/)
+- 🖼️ Icons sourced from [Icons8](https://icons8.com)
+
+---
+
+## 📚 What I Learned
+
+- Implementing smooth **scroll-based navigation** with `scroll-mt` to prevent header overlap.
+- Designing **modular and reusable React components** for cards and sections.
+- Adding **hover glow animations** and responsive UI with Tailwind.
+- Hosting a Vite + React app using **GitHub Pages**.
+- Using `gh-pages` package to automate deployment.
+
+---
+
+## 🚀 Run Locally
+
+To run the project locally on your machine:
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+   cd your-repo-name
+   ```
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+3. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+4. **Visit**
+   Open your browser and go to: http://localhost:5173
