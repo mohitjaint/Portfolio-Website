@@ -9,14 +9,14 @@ function About() {
             <div className="flex justify-center items-center gap-10 mt-16 mb-16">
                 
                 {/* Profile Image with Blurred Radial Background */}
-                <div className="relative w-[258px] h-[258px] flex-shrink-0">
+                <div className="relative w-66 h-66 rounded-full flex items-center justify-center flex-shrink-0 border-2 border-[#9857D3]">
                 <div className="absolute inset-0 z-0 flex items-center justify-center">
                     <div className="w-64 h-64 rounded-full blur-2xl opacity-70 bg-[radial-gradient(circle,_#763CAC_0%,_white_100%)]"></div>
                 </div>
                 <img
                     src={profilePhoto}
                     alt="Profile"
-                    className="relative z-10 w-[258px] h-[258px] rounded-full object-cover"
+                    className="relative z-10 w-62 h-62 rounded-full object-cover"
                 />
                 </div>
     
