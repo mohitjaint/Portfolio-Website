@@ -1,4 +1,7 @@
 import React from "react";
+import codeforcesIcon from "../../../assets/codeforcesIcon.png"
+import codechefIcon from "../../../assets/codechefIcon.png"
+
 import { useEffect } from "react";
 function CpCard2() {
 
@@ -20,8 +23,12 @@ function CpCard2() {
  text-white text-xl">
               <a href="https://codeforces.com/profile/zohrex" target="_blank" rel="noopener noreferrer" className="flex flex-col">
                 <div className="flex justify-between items-center mx-2">
-                  <p>Codeforces</p>
+                  <div className="flex gap-4 justify-center items-start">
+                    <img className="w-7" src={codeforcesIcon}/><p> Codeforces</p>
+                  </div>
                   <p>{cfMaxRating} (Max)</p>
+                  
+                  
                 </div>
               </a>
           </div>
@@ -29,7 +36,9 @@ function CpCard2() {
  text-white text-xl">
               <a href="https://www.codechef.com/users/zohrex" target="_blank" rel="noopener noreferrer" className="flex flex-col">
                 <div className="flex justify-between items-center mx-2">
-                  <p>CodeChef</p>
+                  <div className="flex gap-4 justify-center items-start">
+                    <img className="w-7" src={codechefIcon}/><p> CodeChef</p>
+                  </div>
                   <p>1499 (Max)</p>
                 </div>
               </a>

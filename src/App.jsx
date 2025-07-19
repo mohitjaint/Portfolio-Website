@@ -1,18 +1,30 @@
 import Header from './components/Header/Header'
-import About from './components/Cards/About'
 import ProjectPage from './components/Project/Projects'
 import CPsection from './components/CP/CPsection'
+import AboutSection from './components/About/AboutSection'
+import ContactSection from './components/Contact/ContactSection'
 
 
 function App() {
   
   return (
    <>
-    <Header />
-
-    <About />
+   <Header />
+<section  id="about">
+  <AboutSection/>
+</section>
+<section id='cp' className='scroll-mt-16'>
     <CPsection/>
-    <ProjectPage/>
+</section>
+  
+
+<section className='scroll-mt-16' id="projects">
+  <ProjectPage/>
+</section>
+<section id="connect">
+  <ContactSection/>
+</section>
+
    </>
 
   )
