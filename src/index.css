@@ -13,4 +13,9 @@ body {
   
 }
 
-/* Rain drop styles */
+@media (max-width: 640px) {
+  html {
+    font-size: 11px; /* or 13px, adjust to your liking */
+  }
+}
+

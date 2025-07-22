@@ -2,14 +2,15 @@ import { useState, useEffect } from 'react'
 
 function Header() {
   const [activeButton, setActiveButton] = useState('about')
+  const [menuOpen, setMenuOpen] = useState(false)
 
   useEffect(() => {
     const sectionIds = ['about', 'cp', 'projects', 'connect']
 
     const handleScroll = () => {
       const scrollY = window.scrollY
-      let current = 'about' // default
-      
+      let current = 'about'
+
       for (const id of sectionIds) {
         const section = document.getElementById(id)
         if (section) {
@@ -36,19 +37,26 @@ function Header() {
     { id: 'connect', label: 'Connect' }
   ]
 
-  return (
-    <div className='sticky top-0 z-50 bg-[color:#1A0B2E] font-sans text-white text-left flex h-16 items-center'>
-      <p className='flex-[1.5] flex gap-1 text-[#9857D3] font-bold text-2xl p-4'>&lt; <p className='text-white'> Mohit</p> &gt;</p>
+  const handleClick = (id) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+    setActiveButton(id)
+    setMenuOpen(false) // close menu after click (on mobile)
+  }
 
-      <div className='flex justify-between flex-[2] text-[20px] p-4 gap-4'>
+  return (
+    <div className="sticky top-0 z-50 bg-[#1A0B2E] font-sans text-white text-left flex flex-wrap items-center justify-between px-4 py-3">
+      {/* Logo */}
+      <div className="flex items-center text-2xl font-bold gap-1 text-[#9857D3]">
+        &lt; <span className="text-white">Mohit</span> &gt;
+      </div>
+
+      {/* Desktop Nav */}
+      <div className="hidden md:flex gap-4 text-[18px]">
         {buttons.map(button => (
           <button
             key={button.id}
-            onClick={() => {
-              document.getElementById(button.id)?.scrollIntoView({ behavior: 'smooth' })
-              setActiveButton(button.id)
-            }}
-            className={`p-2 rounded-xl delay-100 transition-all duration-300 ease-in-out 
+            onClick={() => handleClick(button.id)}
+            className={`p-2 rounded-xl transition-all duration-300 ease-in-out
               ${activeButton === button.id
                 ? 'bg-gray-100 text-[#1A0B2E] font-semibold'
                 : 'text-white hover:shadow-[0_0_10px_#ffffff]'}
@@ -58,6 +66,35 @@ function Header() {
           </button>
         ))}
       </div>
+
+      {/* Mobile Menu Toggle */}
+      <div className="md:hidden">
+        <button
+          onClick={() => setMenuOpen(prev => !prev)}
+          className="text-white text-2xl focus:outline-none"
+        >
+          ☰
+        </button>
+      </div>
+
+      {/* Mobile Dropdown */}
+      {menuOpen && (
+        <div className="w-full mt-2 md:hidden flex flex-col gap-2">
+          {buttons.map(button => (
+            <button
+              key={button.id}
+              onClick={() => handleClick(button.id)}
+              className={`p-2 rounded-xl transition-all duration-300 ease-in-out text-left
+                ${activeButton === button.id
+                  ? 'bg-gray-100 text-[#1A0B2E] font-semibold'
+                  : 'text-white hover:bg-[#2c1b42]'}
+              `}
+            >
+              {button.label}
+            </button>
+          ))}
+        </div>
+      )}
     </div>
   )
 }

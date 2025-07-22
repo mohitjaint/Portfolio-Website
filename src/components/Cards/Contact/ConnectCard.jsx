@@ -20,7 +20,7 @@ function ContactCard() {
     };
     return ( 
         <div>
-      <div className="w-auto h-120 mx-10 p-10 rounded-lg bg-[linear-gradient(to_right,_rgba(105,59,147,0.2)_0%,_rgba(110,191,244,0.2)_77%,_rgba(70,144,212,0.2)_100%)] backdrop-blur-md
+      <div className="w-auto h-screen mx-10 p-10 rounded-lg bg-[linear-gradient(to_right,_rgba(105,59,147,0.2)_0%,_rgba(110,191,244,0.2)_77%,_rgba(70,144,212,0.2)_100%)] backdrop-blur-md
  text-white text-xl mb-10">
        <h1 className="font-semibold text-[#9857D3] text-3xl mb-10"># Let's Connect</h1>
         

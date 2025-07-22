@@ -10,18 +10,18 @@ function App() {
   return (
    <>
    <Header />
-<section  id="about">
+<section  id="about" className='scroll-mt-60 sm:scroll-mt-16'>
   <AboutSection/>
 </section>
-<section id='cp' className='scroll-mt-16'>
+<section id='cp' className=' scroll-mt-60 sm:scroll-mt-16'>
     <CPsection/>
 </section>
   
 
-<section className='scroll-mt-16' id="projects">
+<section className='scroll-mt-60 sm:scroll-mt-16' id="projects">
   <ProjectPage/>
 </section>
-<section id="connect">
+<section id="connect" className='scroll-mt-60 sm:scroll-mt-16'>
   <ContactSection/>
 </section>
 
